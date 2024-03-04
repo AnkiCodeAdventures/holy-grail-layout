@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+header {
+  height: 60px;
+  background-color: coral;
+}
+
+.columns-container {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-grow: 1;
+}
+
+nav {
+  width: 100px;
+  background-color: orange;
+  flex-shrink: 0;
+}
+
+main {
+  background-color: rgb(229, 194, 117);
+  flex-grow: 1;
+}
+
+aside {
+  width: 100px;
+  background-color: crimson;
+  flex-shrink: 0;
+}
+
+footer {
+  height: 100px;
+  background-color: grey;
+}
